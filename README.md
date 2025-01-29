@@ -2,7 +2,7 @@
 
 ## download gitignore usring curl ( i am using general template gitignore)
 
-''' bash
+'''bash
 curl https://raw.githubusercontent.com/ArvindRajbhar/General_template_for_CCN/refs/heads/main/.gitignore > .gitignore
 '''
 
@@ -19,7 +19,7 @@ curl https://raw.githubusercontent.com/ArvindRajbhar/General_template_for_CCN/re
 bash init_setup.sh
 '''
 
-## tensorflow verification
+## tensorflow verification 
 '''bash
 python -c "import tensorflow as tf;print(tf.config.list_physical_devices('GPU'))"
 '''
@@ -32,3 +32,6 @@ mkdir Tensorflow && cd TensorFlow
 '''bash
 git clone https://github.com/tensorflow/models.git
 '''
+
+remove .git directory of models repository to avoid git conflicts
+add models folder to .gitigonre 
