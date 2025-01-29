@@ -23,3 +23,12 @@ bash init_setup.sh
 '''bash
 python -c "import tensorflow as tf;print(tf.config.list_physical_devices('GPU'))"
 '''
+# Installation of Object Detection API
+'''bash
+mkdir Tensorflow && cd TensorFlow
+'''
+
+##clone the Tensorflow models folder here
+'''bash
+git clone https://github.com/tensorflow/models.git
+'''
