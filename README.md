@@ -13,3 +13,13 @@ wget https://raw.githubusercontent.com/ArvindRajbhar/General_template_for_CCN/re
 '''bash
 curl https://raw.githubusercontent.com/ArvindRajbhar/General_template_for_CCN/refs/heads/main/init_setup.sh > init_setup.sh
 '''
+
+## Run the init_setup.sh
+'''bash
+bash init_setup.sh
+'''
+
+## tensorflow verification
+'''bash
+python -c "import tensorflow as tf;print(tf.config.list_physical_devices('GPU'))"
+'''
