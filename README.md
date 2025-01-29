@@ -34,4 +34,23 @@ git clone https://github.com/tensorflow/models.git
 '''
 
 remove .git directory of models repository to avoid git conflicts
-add models folder to .gitigonre 
+
+## add models folder to .gitigonre uou should be in root directory
+'''bash
+echo "Tensorflow/models" >> .gitignore
+'''
+
+## Protobuf installation link
+https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html
+visit the link - https://github.com/protocolbuffers/protobuf/releases
+    - windowa user - 
+        search for - protoc-29.3-win64.zip and download it
+    - Mac User - 
+        search for - protoc-29.3-osx-x86_64.zip
+    - For Linux user - 
+        '''
+        sudo apt install -y protobuf-compiler
+        '''
+Unzip into root folder and add path <Path to Protoc folder>/bin into system environment variable PATH
+
+
