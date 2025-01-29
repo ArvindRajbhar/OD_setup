@@ -53,4 +53,17 @@ visit the link - https://github.com/protocolbuffers/protobuf/releases
         '''
 Unzip into root folder and add path <Path to Protoc folder>/bin into system environment variable PATH
 
+# After setting the System environment variable restart your system
+## Goto to root directory i.e. Tesnsor_Flow/TFOD/OD_setup/Tensorflow/models/research and run the command to verify the protoc version
+'''bash
+protoc --version
+'''
+## Run the command to convert the proto file to python file
+'''bash
+protoc object_detection/protos/*.proto --python_out=.
+'''
+
+
+
+
 
